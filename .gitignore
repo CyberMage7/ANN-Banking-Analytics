@@ -1,0 +1,68 @@
+# Python-related
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environment
+venv/
+env/
+ENV/
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# TensorFlow/Keras logs
+logs/
+tensorboard_logs/
+regressionlogs/
+
+# VS Code
+.vscode/
+.vs/
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Data files (consider if you want to exclude these)
+# *.csv
+# *.pkl
+# *.h5
+
+# Local configuration files
+.local/
+.local.yaml
+
+# Other
+*.log
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+coverage.xml
+*.cover
