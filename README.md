@@ -1,4 +1,4 @@
-# Customer Churn Prediction with Artificial Neural Networks
+# ANN-Banking-Analytics
 
 [![Python](https://img.shields.io/badge/Python-3.11.7-blue.svg)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.19.0-orange.svg)](https://www.tensorflow.org/)
@@ -56,8 +56,8 @@ The neural network consists of:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ANN-Classification-Churn.git
-   cd ANN-Classification-Churn
+   git clone https://github.com/yourusername/ANN-Banking-Analytics.git
+   cd ANN-Banking-Analytics
    ```
 
 2. Install dependencies:
