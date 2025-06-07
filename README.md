@@ -65,16 +65,22 @@ The neural network consists of:
    pip install -r requirements.txt
    ```
 
-### Running the Application
+### Running the Applications
 
-Launch the Streamlit web application:
+Launch the churn prediction web application:
 ```bash
 streamlit run app.py
 ```
 
+Launch the salary prediction web application:
+```bash
+streamlit run app_regression.py
+```
+
 ## Project Structure
 
-- `app.py` - Streamlit web application
+- `app.py` - Streamlit web application for churn prediction
+- `app_regression.py` - Streamlit web application for salary prediction
 - `experiments.ipynb` - Jupyter notebook with classification model development
 - `churnRegression.ipynb` - Jupyter notebook with regression model development
 - `prediction.ipynb` - Notebook demonstrating model inference
@@ -89,15 +95,30 @@ streamlit run app.py
 ## Usage
 
 ### Churn Prediction (Classification)
-1. Access the web application
-2. Enter customer information (demographics, banking details, etc.)
-3. Get prediction on whether the customer is likely to churn
+You can use the classification model in two ways:
+
+1. **Using the Streamlit App**:
+   - Run `streamlit run app.py`
+   - Enter customer information in the interface
+   - Get prediction on whether the customer is likely to churn
+
+2. **Using the Jupyter Notebook**:
+   - Open `experiments.ipynb` to see the model development process
+   - Open `prediction.ipynb` to make custom predictions
 
 ### Salary Estimation (Regression)
-The regression model for salary estimation is implemented in `churnRegression.ipynb`. To use:
-1. Open the notebook in Jupyter or VS Code
-2. Execute the cells to train the model or load the pre-trained model
-3. Input customer data to get salary predictions
+You can use the regression model in two ways:
+
+1. **Using the Streamlit App**:
+   - Run `streamlit run app_regression.py`
+   - Enter customer information in the user-friendly interface
+   - Get instant salary predictions with visualizations
+   - View additional context about the prediction
+
+2. **Using the Jupyter Notebook**:
+   - Open `churnRegression.ipynb` in Jupyter or VS Code
+   - Execute the cells to train the model or load the pre-trained model
+   - Input custom data to get salary predictions
 
 ### Model Performance
 - **Classification Model**: Evaluated using accuracy and binary cross-entropy
