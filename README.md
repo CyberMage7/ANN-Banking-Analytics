@@ -82,6 +82,7 @@ streamlit run app_regression.py
 - `app.py` - Streamlit web application for churn prediction
 - `app_regression.py` - Streamlit web application for salary prediction
 - `experiments.ipynb` - Jupyter notebook with classification model development
+- `hyperparametertuningann.ipynb` - Jupyter notebook for hyperparameter optimization of the classification model
 - `churnRegression.ipynb` - Jupyter notebook with regression model development
 - `prediction.ipynb` - Notebook demonstrating model inference
 - `model.h5` - Saved trained classification model
@@ -125,6 +126,19 @@ You can use the regression model in two ways:
 - **Regression Model**: Evaluated using Mean Absolute Error (MAE)
 
 Both models include TensorBoard integration for detailed performance monitoring and visualization.
+
+## Model Optimization
+
+The classification model has been optimized through hyperparameter tuning using GridSearchCV with the following strategy:
+
+- **Hyperparameters Explored**:
+  - Number of neurons per layer: [16, 32, 64, 128]
+  - Number of hidden layers: [1, 2]
+  - Number of training epochs: [50, 100]
+
+- **Validation Strategy**: 3-fold cross-validation
+
+This systematic approach ensures the model architecture is optimized for the churn prediction task, improving overall performance and generalization capability.
 
 ## License
 
